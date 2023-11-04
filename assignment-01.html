@@ -1,0 +1,96 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Food Pyramid</title>
+	 <link rel="stylesheet" type="text/css" href="assignment-01.css">
+<head>
+<body>
+
+
+<h1>Food Pyramid  </h1>
+
+<div id="py">	
+
+<!-- Level 1 -->
+	<div class="part" id="L1" onmouseover="Lvis(L1p, L1m)" onmouseout="Lhid(L1p, L1m)">
+		<div class="roundT">
+			<button class="button" id="L1p" type="button" onclick="Ladd(num1, L1num, 1, -0.2, -0.2, -0.2, -0.2, -0.2, 1, 0, 0, 0, 0, 0)"> <p class="par">+</p> </button>
+			<button class="button" id="L1num" type="button" onclick=""> <p id="num1">0</p> </button>
+			<button class="button" id="L1m" type="button" onclick="Ladd(num1, L1num, -1, 0.2, 0.2, 0.2, 0.2, 0.2, -1, 0, 0, 0, 0, 0)"> <p class="par">-</p> </button>
+		</div>
+	</div>
+
+<!-- Level 2 -->
+	<div class="part" id="L2" onmouseover="Lvis(L2p, L2m)" onmouseout="Lhid(L2p, L2m)">
+		<div class="round">
+			<button class="button" id="L2p" type="button" onclick="Ladd(num2, L2num, -0.2, 1, -0.2, -0.2, -0.2, -0.2, 0, 1, 0, 0, 0, 0)">+</button>
+			<button class="button" id="L2num" type="button" onclick=""> <p id="num2">0</p> </button>
+			<button class="button" id="L2m" type="button" onclick="Ladd(num2, L2num, 0.2, -1, 0.2, 0.2, 0.2, 0.2, 0, -1, 0, 0, 0, 0)">-</button>
+		</div>
+	</div>
+
+<!-- Level 3 -->
+	<div class="part" id="L3" onmouseover="Lvis(L3p, L3m)" onmouseout="Lhid(L3p, L3m)">
+		<div class="round">
+			<button class="button" id="L3p" type="button" onclick="Ladd(num3, L3num, -0.2, -0.2, 1, -0.2, -0.2, -0.2, 0, 0, 1, 0, 0, 0)">+</button>
+			<button class="button" id="L3num" type="button" onclick=""> <p id="num3">0</p> </button>
+			<button class="button" id="L3m" type="button" onclick="Ladd(num3, L3num, 0.2, 0.2, -1, 0.2, 0.2, 0.2, 0, 0, -1, 0, 0, 0)">-</button>
+		</div>
+	</div>
+
+<!-- Level 4 -->
+	<div class="part" id="L4"  onmouseover="Lvis(L4p, L4m)" onmouseout="Lhid(L4p, L4m)">
+		<div class="round">
+			<button class="button" id="L4p" type="button" onclick="Ladd(num4, L4num, -0.2, -0.2, -0.2, 1, -0.2, -0.2, 0, 0, 0, 1, 0, 0)">+</button>
+			<button class="button" id="L4num" type="button"> <p id="num4">0</p> </button>
+			<button class="button" id="L4m" type="button" onclick="Ladd(num4, L4num, 0.2, 0.2, 0.2, -1, 0.2, 0.2, 0, 0, 0, -1, 0, 0)">-</button>
+		</div>
+	</div>
+
+<!-- Level 5 -->
+	<div class="part" id="L5"  onmouseover="Lvis(L5p, L5m)" onmouseout="Lhid(L5p, L5m)">
+		<div class="round">
+			<button class="button" id="L5p" type="button" onclick="Ladd(num5, L5num, -0.2, -0.2, -0.2, -0.2, 1, -0.2, 0, 0, 0, 0, 1, 0)">+</button>
+			<button class="button" id="L5num" type="button" > <p id="num5">0</p> </button>
+			<button class="button" id="L5m" type="button" onclick="Ladd(num5, L5num, 0.2, 0.2, 0.2, 0.2, -1, 0.2, 0, 0, 0, 0, -1, 0)">-</button>
+		</div>
+	</div>
+
+<!-- Level 6 -->
+	<div class="part" id="L6"  onmouseover="Lvis(L6p, L6m)" onmouseout="Lhid(L6p, L6m)">
+		<div class="round">
+			<button class="button" id="L6p" type="button" onclick="Ladd(num6, L6num, -0.2, -0.2, -0.2, -0.2, -0.2, 1, 0, 0, 0, 0, 0, 1)">+</button>
+			<button class="button" id="L6num" type="button" > <p id="num6">0</p> </button>
+			<button class="button" id="L6m" type="button" onclick="Ladd(num6, L6num, 0.2, 0.2, 0.2, 0.2, 0.2, -1, 0, 0, 0, 0, 0, -1)">-</button>
+		</div>
+	</div>
+	
+</div>	
+
+<!-- Section for inputing and displaying date -->
+<div class="Bsec">
+	<p id="datetext">Today's date</p>
+
+	<div id="sec">
+	<input type="text" id="textbox1" placeholder="Day">
+	<input type="text" id="textbox2" placeholder="Month">
+	<input type="text" id="textbox3" placeholder="Year">
+	<button id="date" type="button" onclick="Outputdate(textbox1.value,textbox2.value,textbox3.value)">ok</button>
+	</div>
+</div>
+
+<!-- Section for demographic selection -->
+<div id="sel">
+	
+	<div class="Bsec">
+		<p id="recSelect">Adult, Teen and Child(5 to 12)</p>
+		<button class="dbutton" id="Demp" type="button" onclick="changingDem(0)">Adult, Teen and Child(5 to 12)</button>
+		<button class="dbutton" id="Demm" type="button" onclick="changingDem(1)">Child(1 to 4)</button>
+	</div>
+
+</div>	
+
+ <script src="assignment-01.js"></script> 
+
+</body>
+</html> 

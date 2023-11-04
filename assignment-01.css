@@ -1,0 +1,144 @@
+html{
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+
+body{
+	height:100%;
+	width:100%;
+}
+
+
+/*Levels of the Pyramid*/
+.part{
+	height: 15%;
+	width: 100%;
+	padding-top:2%;
+	box-sizing: border-box;
+}
+
+/*Section for demographic selection*/
+.Bsec{
+	width:100%;
+	min-width:800px;
+	/*background-color:orange;*/
+	margin:auto;
+}
+
+/*buttons for level 1*/
+.roundT{
+	font-size: 100%;
+
+	/*width:9%;
+	height:50%;*/
+
+	padding-top: 2.2%;
+	width:13%;
+	height:60px;
+	
+	//background-color:orange;
+	margin:auto;
+}
+
+/*buttons for all remaining levels*/
+.round{
+	
+	/*width:10%;
+	height:90%;*/
+
+	width:13%;
+	height:60px;
+	//background-color:orange;
+	margin:auto;
+}
+
+.button{
+	height:90%;
+	width:30%;
+	background-color:gray;
+	border-style:solid;
+	border:5%;
+	border-color:black;
+	border-radius: 50%;
+	font-size:100%;
+	color:white;
+}
+
+/* buttons for changing demographic */
+.dbutton{
+	height:90%;
+	width:30%;
+	background-color:gray;
+	border-style:solid;
+	//border:5%;
+	border-color:black;
+	border-radius: 5%;
+	font-size:100%;
+	color:white;
+}
+
+/* Level 1 number containing number */
+#L1num{
+	background-color:green;
+	margin:auto;
+}
+
+
+.par{
+	text-align:center;
+}
+
+#textbox{
+	margin-top: 1%;
+}
+
+/* The whole Pyramid */
+#py{
+	
+	margin:auto;
+	width:75%;
+	height:75%;
+	clip-path: polygon(50% 0%, 10% 110%, 90% 110%);
+	min-height:550px;
+	min-width:800px;
+
+	/*min-height:550px;
+	min-width:1900px;*/
+}
+
+
+#L1 {
+	height:21%;
+	background-color:#f54542;
+	padding-top:3%;
+	margin:auto;
+	margin-bottom:20px;
+	margin-top:20px;
+	/* transform: scale(2,2); */
+}
+
+#L2 {
+	background-color:#f5bf42;
+	margin-bottom:20px;
+}
+
+#L3 {
+	background-color:#f5dd42;
+	
+}
+
+#L4 {
+	background-color:#42c5f5;
+}
+
+#L5 {
+	background-color:#bd7b4a;
+}
+
+#L6 {
+	background-color:#bbf25e;
+	//padding-top:3.5%;
+	//box-sizing: border-box;
+}
+
